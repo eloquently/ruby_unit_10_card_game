@@ -123,7 +123,34 @@ Since these instance variables will not change after the `Card` is initialized,
 we do not need writer methods.
 
 We are going to want a few other methods that transform the instance variables
-before returning them.
+before returning them. You can play around with these methods as you write
+them in `pry`. To install `pry`, run the following in your bash terminal:
+
+```
+gem install pry
+```
+
+Once it is installed, just type `pry` in your terminal to open up a ruby
+console. Be sure to `pry` from the root directory of your project. The
+root directory of the project is the folder that contains `instructions.md`
+and the `lib` directory.
+
+To load your code into `pry` use the following command:
+
+```ruby
+load("lib/card.rb")
+```
+
+Now you can create cards and run methods on them like this:
+
+```ruby
+c = Card.new('spades', 6)
+c.suit
+c.rank
+```
+
+Whenever you change your `card.rb` file, you will have to tell `pry` to
+reload it. You can do so by re-running the `load("lib/card.rb")` command.
 
 #### rank_as_num
 
