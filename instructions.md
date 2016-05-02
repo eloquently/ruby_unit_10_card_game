@@ -281,9 +281,9 @@ def win_count=(new_win_count)
 end
 ```
 
-Create similar writer method for `loss_count`.
+Create a similar writer method for `loss_count`.
 
-#### Hand methods
+#### Player methods
 
 ##### #add_cards_to_hand(card_array)
 
@@ -299,7 +299,10 @@ return the score as an integer.
 ##### #hand_to_s
 
 This method will return the player's `@hand` as a string (use the Array class's
-`#join` method)
+`join` method on an array of strings created by the `to_s` method you wrote for
+`Card`). Hint: you can use `Array#map` to create the array of strings you will
+want to join. You can choose the format of the output of this method
+but it should look something like: `4D, AC, 4S, QD, 8D`.
 
 ##### #clear_hand
 
