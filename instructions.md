@@ -268,10 +268,10 @@ following instance variables: a `@name`, a `@hand` (an array of cards this
 `Player` class.
 
 Create an initializer that only takes `name` as a parameter. The initializer
-will `@name` equal to the parameter, set `@hand` equal to an empty array and set
-`@win_count` and `@loss_count` equal to zero.
+will set `@name` equal to the parameter, set `@hand` equal to an empty array,
+and set `@win_count` and `@loss_count` equal to zero.
 
-Create reader methods for all three instance variables, and create writer
+Create reader methods for all four instance variables, and create writer
 methods for `@win_count` and `@loss_count`. The writer method for `@win_count`
 should look like this:
 
