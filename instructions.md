@@ -321,9 +321,9 @@ require_relative "Player"
 ```
 
 A `Game` object will have an array of `@players` and a `@deck`. Write an
-initializer that will take parameters for a players array. The initializer
-should also provide the `Game` object with a fresh `Deck`.
-You don't need any readers and writers here.
+initializer that will take one parameter: an array of player objects. The
+initializer should also provide the `Game` object with a fresh `Deck`.
+You don't need any readers and writers for this class.
 
 #### Game methods
 
@@ -377,8 +377,8 @@ Then, create a `Game` object (remember to pass it an array of players).
 Then, create a loop that will play three games. Each play of thegame should
 print out the `player_info`, `deal_to` the players, print out the
 `player_hands`, `determine_winner`, print out the `player_info` again (so we
-see the updated win/loss records) and then `reset_game` so its ready to be played
-again.
+see the updated win/loss records) and then `reset_game` so its ready to be
+played again.
 
 Your results should look something like:
 
